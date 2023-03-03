@@ -1,24 +1,16 @@
 import Head from "next/head";
+import Services from "@/components/Services";
+import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
-import Image from "next/image";
-import deved from "../public/dev-ed-wave.png";
-import design from "../public/design.png";
-import code from "../public/code.png";
-import consulting from "../public/consulting.png";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
+import Avatar from "@/components/Avatar";
 import { useState } from "react";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
-
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -68,162 +60,15 @@ export default function Home() {
             <AiFillGithub className="hover:opacity-60 hover:text-mid2" />
             <AiFillLinkedin className="hover:opacity-60 hover:text-mid2" />
           </div>
-          <div className="relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80  mt-20 mx-auto overflow-hidden dark:bg-gradient-to-b dark:from-pale dark:to-sand">
-            <Image src={deved} fill objectFit="cover" />
-          </div>
+
+          <Avatar />
         </section>
 
-        <section>
-          <div className="flex-col justify-center">
-            <h3 className="text-3xl py-1 text-light_front lg:text-4xl dark:text-fore">Services I offer</h3>
-            <p className=" text-md py-5 leading-8 lg:text-xl text-light_mid2 dark:text-mid2">
-              {" "}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              magnam atque sint, rerum aspernatur quod illo quo voluptas
-              voluptates nihil nemo officia earum. Unde totam sapiente
-              cupiditate aliquid molestiae inventore.{" "}
-            </p>
-          </div>
-        </section>
+        <Services />
 
-        <section>
-          <div className="flex-col justify-center">
-            <h3 className="text-3xl py-1 text-light_front lg:text-4xl dark:text-fore">Skills I have</h3>
-            <p className=" text-md py-5 leading-8 lg:text-xl text-light_mid2 dark:text-mid2">
-              {" "}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              magnam atque sint, rerum aspernatur quod illo quo voluptas
-              voluptates nihil nemo officia earum. Unde totam sapiente
-              cupiditate aliquid molestiae inventore.{" "}
-            </p>
-          </div>
+        <Skills />
 
-          <div className="lg:flex gap-10">
-            <div className=" bg-fore  text-center shadow-lg p-10 rounded-xl my-10 dark:bg-mid1">
-              <Image
-                src={design}
-                width={100}
-                height={100}
-                className="mx-auto"
-              />
-              <h3 className="text-lg text-light_front gray font-medium pt-8 pb-2 dark:text-fore">
-                Beautfiul Designs
-              </h3>
-              <p className="text-light_front dark:text-mid2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Maxime, vitae nisi, dolor quidem tenetur voluptatibus laborum
-                labore placeat harum architecto voluptas hic a possimus, nemo
-                earum accusantium quasi aspernatur totam.
-              </p>
-              <h4 className="py-4 text-slate-800 dark:text-pinkish">Design tools i use</h4>
-              <p className="text-mud dark:text-calm">Photoshop</p>
-              <p className="text-mud dark:text-calm">VS code</p>
-              <p className="text-mud dark:text-calm">ML</p>
-            </div>
-
-            <div className=" bg-fore  text-center shadow-lg p-10 rounded-xl my-10 dark:bg-mid1">
-              <Image
-                src={design}
-                width={100}
-                height={100}
-                className="mx-auto"
-              />
-              <h3 className="text-lg text-light_front gray font-medium pt-8 pb-2 dark:text-fore">
-                Beautfiul Designs
-              </h3>
-              <p className="text-light_front dark:text-mid2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Maxime, vitae nisi, dolor quidem tenetur voluptatibus laborum
-                labore placeat harum architecto voluptas hic a possimus, nemo
-                earum accusantium quasi aspernatur totam.
-              </p>
-              <h4 className="py-4 text-slate-800 dark:text-pinkish">Design tools i use</h4>
-              <p className="text-mud dark:text-calm">Photoshop</p>
-              <p className="text-mud dark:text-calm">VS code</p>
-              <p className="text-mud dark:text-calm">ML</p>
-            </div>
-
-            <div className=" bg-fore  text-center shadow-lg p-10 rounded-xl my-10 dark:bg-mid1">
-              <Image
-                src={design}
-                width={100}
-                height={100}
-                className="mx-auto"
-              />
-              <h3 className="text-lg text-light_front gray font-medium pt-8 pb-2 dark:text-fore">
-                Beautfiul Designs
-              </h3>
-              <p className="text-light_front dark:text-mid2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Maxime, vitae nisi, dolor quidem tenetur voluptatibus laborum
-                labore placeat harum architecto voluptas hic a possimus, nemo
-                earum accusantium quasi aspernatur totam.
-              </p>
-              <h4 className="py-4 text-slate-800 dark:text-pinkish">Design tools i use</h4>
-              <p className="text-mud dark:text-calm">Photoshop</p>
-              <p className="text-mud dark:text-calm">VS code</p>
-              <p className="text-mud dark:text-calm">ML</p>
-            </div>
-          </div>
-
-          {/* // this is the section for the projects */}
-          <div className="flex flex-col gap-10 py-10 lg:flex-row flex-wrap">
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web1}
-                className="rounded-lg object-cover "
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web2}
-                className="rounded-lg object-cover "
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web3}
-                className="rounded-lg object-cover "
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web4}
-                className="rounded-lg object-cover "
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web5}
-                className="rounded-lg object-cover "
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web6}
-                className="rounded-lg object-cover "
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-          </div>
-        </section>
+        <Projects />
       </main>
     </div>
   );
