@@ -27,10 +27,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-back">
+      <main className="bg-light_bg px-10 md:px-20 lg:px-40 dark:bg-back">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons dark:text-fore">
+            <h1 className="text-xl font-burtons text-light_front dark:text-fore">
               developedbyparth
             </h1>
             <ul className="flex items-center">
@@ -43,7 +43,7 @@ export default function Home() {
               <li>
                 {" "}
                 <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 dark:bg-gradient-to-r dark:from-pale dark:to-calm dark:text-black "
+                  className="bg-gradient-to-r from-light_mid2 to-light_accent text-black px-4 py-2 rounded-md ml-8 dark:bg-gradient-to-r dark:from-pale dark:to-calm dark:text-black "
                   href="#"
                 >
                   Resume
@@ -52,18 +52,18 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 font-medium text-teal-600 md:text-6xl lg:text-8xl dark:text-fore">
+            <h2 className="text-5xl py-2 font-medium text-light_front md:text-6xl lg:text-8xl dark:text-fore">
               Parth Juneja
             </h2>
-            <h3 className="text-2xl py-2 md:text-3xl lg:text-4xl dark:text-sand">
+            <h3 className="text-2xl py-2 md:text-3xl lg:text-4xl text-light_mid2 dark:text-sand">
               Developer, Student
             </h3>
-            <p className=" text-md py-5 leading-8 text-gray-800 md: text-xl mx-auto max-w-xl lg:text-2xl lg:max-w-2xl dark:text-mud">
+            <p className=" text-md py-5 leading-8 text-light_front md: text-xl mx-auto max-w-xl lg:text-2xl lg:max-w-2xl dark:text-mud">
               Hi, I'm Parth, a developer from India. I'm currently studying
               pursuing Undergrad in Comp Sci. and I love to code.
             </p>
           </div>
-          <div className="text-5xl justify-center flex gap-16 py-3 text-gray-600 dark:text-calm">
+          <div className="text-5xl justify-center flex gap-16 py-3 text-light_front dark:text-calm">
             <AiFillTwitterCircle className="hover:opacity-60 hover:text-mid2" />
             <AiFillGithub className="hover:opacity-60 hover:text-mid2" />
             <AiFillLinkedin className="hover:opacity-60 hover:text-mid2" />
@@ -75,8 +75,8 @@ export default function Home() {
 
         <section>
           <div className="flex-col justify-center">
-            <h3 className="text-3xl py-1 dark:text-fore">Services I offer</h3>
-            <p className=" text-md py-5 leading-8 text-gray-800 dark:text-mid2">
+            <h3 className="text-3xl py-1 text-light_front lg:text-4xl dark:text-fore">Services I offer</h3>
+            <p className=" text-md py-5 leading-8 lg:text-xl text-light_mid2 dark:text-mid2">
               {" "}
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
               magnam atque sint, rerum aspernatur quod illo quo voluptas
@@ -88,8 +88,8 @@ export default function Home() {
 
         <section>
           <div className="flex-col justify-center">
-            <h3 className="text-3xl py-1 dark:text-fore">Skills I have</h3>
-            <p className=" text-md py-5 leading-8 text-gray-800 dark:text-mid2">
+            <h3 className="text-3xl py-1 text-light_front lg:text-4xl dark:text-fore">Skills I have</h3>
+            <p className=" text-md py-5 leading-8 lg:text-xl text-light_mid2 dark:text-mid2">
               {" "}
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
               magnam atque sint, rerum aspernatur quod illo quo voluptas
@@ -99,70 +99,70 @@ export default function Home() {
           </div>
 
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-mid1">
+            <div className=" bg-fore  text-center shadow-lg p-10 rounded-xl my-10 dark:bg-mid1">
               <Image
                 src={design}
                 width={100}
                 height={100}
                 className="mx-auto"
               />
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-fore">
+              <h3 className="text-lg text-light_front gray font-medium pt-8 pb-2 dark:text-fore">
                 Beautfiul Designs
               </h3>
-              <p className="dark:text-mid2">
+              <p className="text-light_front dark:text-mid2">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Maxime, vitae nisi, dolor quidem tenetur voluptatibus laborum
                 labore placeat harum architecto voluptas hic a possimus, nemo
                 earum accusantium quasi aspernatur totam.
               </p>
-              <h4 className="py-4 text-teal-600 dark:text-pinkish">Design tools i use</h4>
-              <p className="text-gray-800 py-1 dark:text-calm">Photoshop</p>
-              <p className="text-gray-800 py-1 dark:text-calm">VS code</p>
-              <p className="text-gray-800 py-1 dark:text-calm">ML</p>
+              <h4 className="py-4 text-slate-800 dark:text-pinkish">Design tools i use</h4>
+              <p className="text-mud dark:text-calm">Photoshop</p>
+              <p className="text-mud dark:text-calm">VS code</p>
+              <p className="text-mud dark:text-calm">ML</p>
             </div>
 
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-mid1">
+            <div className=" bg-fore  text-center shadow-lg p-10 rounded-xl my-10 dark:bg-mid1">
               <Image
                 src={design}
                 width={100}
                 height={100}
                 className="mx-auto"
               />
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-fore">
+              <h3 className="text-lg text-light_front gray font-medium pt-8 pb-2 dark:text-fore">
                 Beautfiul Designs
               </h3>
-              <p className="dark:text-mid2">
+              <p className="text-light_front dark:text-mid2">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Maxime, vitae nisi, dolor quidem tenetur voluptatibus laborum
                 labore placeat harum architecto voluptas hic a possimus, nemo
                 earum accusantium quasi aspernatur totam.
               </p>
-              <h4 className="py-4 text-teal-600 dark:text-pinkish">Design tools i use</h4>
-              <p className="text-gray-800 py-1 dark:text-calm">Photoshop</p>
-              <p className="text-gray-800 py-1 dark:text-calm">VS code</p>
-              <p className="text-gray-800 py-1 dark:text-calm">ML</p>
+              <h4 className="py-4 text-slate-800 dark:text-pinkish">Design tools i use</h4>
+              <p className="text-mud dark:text-calm">Photoshop</p>
+              <p className="text-mud dark:text-calm">VS code</p>
+              <p className="text-mud dark:text-calm">ML</p>
             </div>
 
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-mid1">
+            <div className=" bg-fore  text-center shadow-lg p-10 rounded-xl my-10 dark:bg-mid1">
               <Image
                 src={design}
                 width={100}
                 height={100}
                 className="mx-auto"
               />
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-fore">
+              <h3 className="text-lg text-light_front gray font-medium pt-8 pb-2 dark:text-fore">
                 Beautfiul Designs
               </h3>
-              <p className="dark:text-mid2">
+              <p className="text-light_front dark:text-mid2">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Maxime, vitae nisi, dolor quidem tenetur voluptatibus laborum
                 labore placeat harum architecto voluptas hic a possimus, nemo
                 earum accusantium quasi aspernatur totam.
               </p>
-              <h4 className="py-4 text-teal-600 dark:text-pinkish">Design tools i use</h4>
-              <p className="text-gray-800 py-1 dark:text-calm">Photoshop</p>
-              <p className="text-gray-800 py-1 dark:text-calm">VS code</p>
-              <p className="text-gray-800 py-1 dark:text-calm">ML</p>
+              <h4 className="py-4 text-slate-800 dark:text-pinkish">Design tools i use</h4>
+              <p className="text-mud dark:text-calm">Photoshop</p>
+              <p className="text-mud dark:text-calm">VS code</p>
+              <p className="text-mud dark:text-calm">ML</p>
             </div>
           </div>
 

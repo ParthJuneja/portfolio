@@ -21,7 +21,13 @@ module.exports = {
       mud:'#9C6644',
       sand:'#B08968',
       calm:'#DDB892',
-      pinkish:'#f7dad9'
+      pinkish:'#f7dad9',
+      some_gray:'#9D9D9D',
+      light_bg:'#f6f6f2',
+      light_accent:'#c2edce',
+      light_accent2:'#badfe7',
+      light_mid2:'#6fb3b8',
+      light_front:'#388087',
 
       
     },
