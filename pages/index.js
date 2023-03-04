@@ -46,7 +46,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-5">
-            <h2 className="text-5xl py-2 font-medium text-light_front md:text-6xl lg:text-8xl dark:text-fore">
+            <h2 className="text-5xl pt-2 pb-5 font-medium text-light_front md:text-6xl lg:text-8xl dark:text-transparent dark:bg-gradient-to-r dark:from-fore dark:to-pale dark:bg-clip-text ">
               Parth Juneja
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl lg:text-4xl text-light_mid2 dark:text-sand">
