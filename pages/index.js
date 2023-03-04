@@ -11,7 +11,7 @@ import { useState } from "react";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
-  return (
+  return (  
     <div className={darkMode ? "dark" : ""}>
       <Head>
         <title>Parth Juneja Portfolio</title>
@@ -23,7 +23,7 @@ export default function Home() {
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons text-light_front dark:text-fore">
-              developedbyparth
+              PJ
             </h1>
             <ul className="flex items-center">
               <li>
@@ -48,7 +48,7 @@ export default function Home() {
               Parth Juneja
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl lg:text-4xl text-light_mid2 dark:text-sand">
-              Developer, Student
+              Front End Developer, Machine Learning 
             </h3>
             <p className=" text-md py-5 leading-8 text-light_front md: text-xl mx-auto max-w-xl lg:text-2xl lg:max-w-2xl dark:text-mud">
               Hi, I'm Parth, a developer from India. I'm currently studying

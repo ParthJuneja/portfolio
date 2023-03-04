@@ -3,7 +3,7 @@ import React from 'react'
 function Services() {
   return (
     <section>
-      <div className="flex-col justify-center">
+      <div className="flex-1 justify-center">
         <h3 className="text-3xl py-1 text-light_front lg:text-4xl dark:text-fore">Services I offer</h3>
         <p className=" text-md py-5 leading-8 lg:text-xl text-light_mid2 dark:text-mid2">
           {" "}
