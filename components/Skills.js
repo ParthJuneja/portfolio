@@ -22,7 +22,7 @@ function Skills() {
 
       <div className="lg:flex gap-10">
         <div className=" bg-fore  text-center shadow-lg p-10 rounded-xl my-10 dark:bg-mid1">
-          <Image src={design} width={100} height={100} className="mx-auto" />
+          <Image src={design} width={100} height={100} className="mx-auto" alt=""/>
           <h3 className="text-lg text-light_front gray font-medium pt-8 pb-2 dark:text-fore">
             Beautfiul Designs
           </h3>
@@ -42,7 +42,7 @@ function Skills() {
         </div>
 
         <div className=" bg-fore  text-center shadow-lg p-10 rounded-xl my-10 dark:bg-mid1">
-          <Image src={code} width={100} height={100} className="mx-auto" />
+          <Image src={code} width={100} height={100} className="mx-auto" alt=""/>
           <h3 className="text-lg text-light_front gray font-medium pt-8 pb-2 dark:text-fore">
             Robust Code
           </h3>
@@ -68,6 +68,7 @@ function Skills() {
             width={100}
             height={100}
             className="mx-auto"
+            alt=""
           />
           <h3 className="text-lg text-light_front gray font-medium pt-8 pb-2 dark:text-fore">
             Credible Feedback

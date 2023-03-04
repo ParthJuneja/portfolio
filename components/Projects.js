@@ -21,6 +21,7 @@ function Projects() {
             width={"100%"}
             height={"100%"}
             layout="responsive"
+            alt=""
           />
           </a>
         </div>
@@ -32,6 +33,7 @@ function Projects() {
             width={"100%"}
             height={"100%"}
             layout="responsive"
+            alt=""
           />
           </a>
         </div>

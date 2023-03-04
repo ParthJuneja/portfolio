@@ -52,7 +52,7 @@ export default function Home() {
               ML Enthusiast | Front End Developer
             </h3>
             <p className=" text-md py-5 leading-8 text-light_front md: text-xl mx-auto max-w-xl lg:text-2xl lg:max-w-2xl dark:text-mud">
-              Hi, I'm Parth, a Comp Sci. student from New Delhi, India. With the
+              Hi, I&apos;m Parth, a Comp Sci. student from New Delhi, India. With the
               help of ML and AI, I can help you create a better experience for
               your users with{" "}
               <span className="text-earth dark:text-pale">
