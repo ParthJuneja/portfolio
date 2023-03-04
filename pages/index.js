@@ -37,7 +37,7 @@ export default function Home() {
                 {" "}
                 <a
                   className="bg-gradient-to-r from-light_mid2 to-light_accent text-black px-4 py-2 rounded-md ml-8 dark:bg-gradient-to-r dark:from-pale dark:to-calm dark:text-black "
-                  href="#"
+                  href="https://drive.google.com/file/d/1DSsBQ-5B7PWgkvMxHWVFi76wBePdqePO/view?usp=share_link" download={true}
                 >
                   Resume
                 </a>
