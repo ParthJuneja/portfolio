@@ -9,6 +9,7 @@ import { AiFillLinkedin } from "react-icons/ai";
 import Avatar from "@/components/Avatar";
 import { useState } from "react";
 import Contact from "@/components/Contact";
+import {SiLeetcode} from "react-icons/si";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -71,6 +72,9 @@ export default function Home() {
             </a>
             <a href="https://www.linkedin.com/in/parth-juneja-861370211/">
               <AiFillLinkedin className="cursor-pointer hover:opacity-60 hover:text-mid2" />
+            </a>
+            <a href="https://leetcode.com/rizzouri_garden/">
+              <SiLeetcode className="cursor-pointer hover:opacity-60 hover:text-mid2" />
             </a>
           </div>
 
