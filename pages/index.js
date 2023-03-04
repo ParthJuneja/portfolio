@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Services from "@/components/Services";
+// import Services from "@/components/Services";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import { BsFillMoonStarsFill } from "react-icons/bs";
@@ -10,8 +10,8 @@ import Avatar from "@/components/Avatar";
 import { useState } from "react";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
-  return (  
+  const [darkMode, setDarkMode] = useState(true);
+  return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
         <title>Parth Juneja Portfolio</title>
@@ -43,28 +43,29 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10">
+          <div className="text-center p-5">
             <h2 className="text-5xl py-2 font-medium text-light_front md:text-6xl lg:text-8xl dark:text-fore">
               Parth Juneja
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl lg:text-4xl text-light_mid2 dark:text-sand">
-              Front End Developer, Machine Learning 
+              ML Enthusiast | Front End Developer
             </h3>
             <p className=" text-md py-5 leading-8 text-light_front md: text-xl mx-auto max-w-xl lg:text-2xl lg:max-w-2xl dark:text-mud">
-              Hi, I'm Parth, a developer from India. I'm currently studying
-              pursuing Undergrad in Comp Sci. and I love to code.
+              Hi, I'm Parth, a Comp Sci. student from New Delhi, India. With the
+              help of ML and AI, I can help you create a better experience for
+              your users with <span className="text-earth dark:text-pale">Responsive Websites</span> and <span className="text-earth dark:text-pale">Mobile Apps</span>.
             </p>
           </div>
           <div className="text-5xl justify-center flex gap-16 py-3 text-light_front dark:text-calm">
-            <AiFillTwitterCircle className="hover:opacity-60 hover:text-mid2" />
-            <AiFillGithub className="hover:opacity-60 hover:text-mid2" />
-            <AiFillLinkedin className="hover:opacity-60 hover:text-mid2" />
+            <AiFillTwitterCircle className="cursor-pointer hover:opacity-60 hover:text-mid2" />
+            <AiFillGithub className="cursor-pointer hover:opacity-60 hover:text-mid2" />
+            <AiFillLinkedin className="cursor-pointer hover:opacity-60 hover:text-mid2" />
           </div>
 
           <Avatar />
         </section>
 
-        <Services />
+        {/* <Services /> */}
 
         <Skills />
 
