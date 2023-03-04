@@ -8,6 +8,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import Avatar from "@/components/Avatar";
 import { useState } from "react";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -36,7 +37,7 @@ export default function Home() {
                 {" "}
                 <a
                   className="bg-gradient-to-r from-light_mid2 to-light_accent text-black px-4 py-2 rounded-md ml-8 dark:bg-gradient-to-r dark:from-pale dark:to-calm dark:text-black "
-                  href="#"
+                  href="https://drive.google.com/file/d/1DSsBQ-5B7PWgkvMxHWVFi76wBePdqePO/view?usp=share_link" download={true}
                 >
                   Resume
                 </a>
@@ -53,13 +54,24 @@ export default function Home() {
             <p className=" text-md py-5 leading-8 text-light_front md: text-xl mx-auto max-w-xl lg:text-2xl lg:max-w-2xl dark:text-mud">
               Hi, I'm Parth, a Comp Sci. student from New Delhi, India. With the
               help of ML and AI, I can help you create a better experience for
-              your users with <span className="text-earth dark:text-pale">Responsive Websites</span> and <span className="text-earth dark:text-pale">Mobile Apps</span>.
+              your users with{" "}
+              <span className="text-earth dark:text-pale">
+                Responsive Websites
+              </span>{" "}
+              and <span className="text-earth dark:text-pale">Mobile Apps</span>
+              .
             </p>
           </div>
           <div className="text-5xl justify-center flex gap-16 py-3 text-light_front dark:text-calm">
-            <AiFillTwitterCircle className="cursor-pointer hover:opacity-60 hover:text-mid2" />
-            <AiFillGithub className="cursor-pointer hover:opacity-60 hover:text-mid2" />
-            <AiFillLinkedin className="cursor-pointer hover:opacity-60 hover:text-mid2" />
+            <a href="https://twitter.com/pjparties">
+              <AiFillTwitterCircle className="cursor-pointer hover:opacity-60 hover:text-mid2" />
+            </a>
+            <a href="https://github.com/ParthJuneja">
+              <AiFillGithub className="cursor-pointer hover:opacity-60 hover:text-mid2" />
+            </a>
+            <a href="https://www.linkedin.com/in/parth-juneja-861370211/">
+              <AiFillLinkedin className="cursor-pointer hover:opacity-60 hover:text-mid2" />
+            </a>
           </div>
 
           <Avatar />
@@ -70,6 +82,8 @@ export default function Home() {
         <Skills />
 
         <Projects />
+
+        <Contact />
       </main>
     </div>
   );

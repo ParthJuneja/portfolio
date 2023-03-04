@@ -8,7 +8,7 @@ function Projects() {
   return (
     <section>
       <h1 className="mx-auto font-bold w-fit text-3xl pt-10 pb-5 text-light_front lg:text-4xl dark:text-fore">
-        Projects
+        My Projects
       </h1>
       {/* // this is the section for the projects */}
       <div className="flex-row">
