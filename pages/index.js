@@ -1,24 +1,17 @@
 import Head from "next/head";
+// import Services from "@/components/Services";
+import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
-import Image from "next/image";
-import deved from "../public/dev-ed-wave.png";
-import design from "../public/design.png";
-import code from "../public/code.png";
-import consulting from "../public/consulting.png";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
+import Avatar from "@/components/Avatar";
 import { useState } from "react";
+import Contact from "@/components/Contact";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
-
+  const [darkMode, setDarkMode] = useState(true);
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -31,7 +24,7 @@ export default function Home() {
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons text-light_front dark:text-fore">
-              developedbyparth
+              PJ
             </h1>
             <ul className="flex items-center">
               <li>
@@ -44,186 +37,53 @@ export default function Home() {
                 {" "}
                 <a
                   className="bg-gradient-to-r from-light_mid2 to-light_accent text-black px-4 py-2 rounded-md ml-8 dark:bg-gradient-to-r dark:from-pale dark:to-calm dark:text-black "
-                  href="#"
+                  href="https://drive.google.com/file/d/1DSsBQ-5B7PWgkvMxHWVFi76wBePdqePO/view?usp=share_link" download={true}
                 >
                   Resume
                 </a>
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10">
+          <div className="text-center p-5">
             <h2 className="text-5xl py-2 font-medium text-light_front md:text-6xl lg:text-8xl dark:text-fore">
               Parth Juneja
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl lg:text-4xl text-light_mid2 dark:text-sand">
-              Developer, Student
+              ML Enthusiast | Front End Developer
             </h3>
             <p className=" text-md py-5 leading-8 text-light_front md: text-xl mx-auto max-w-xl lg:text-2xl lg:max-w-2xl dark:text-mud">
-              Hi, I'm Parth, a developer from India. I'm currently studying
-              pursuing Undergrad in Comp Sci. and I love to code.
+              Hi, I'm Parth, a Comp Sci. student from New Delhi, India. With the
+              help of ML and AI, I can help you create a better experience for
+              your users with{" "}
+              <span className="text-earth dark:text-pale">
+                Responsive Websites
+              </span>{" "}
+              and <span className="text-earth dark:text-pale">Mobile Apps</span>
+              .
             </p>
           </div>
           <div className="text-5xl justify-center flex gap-16 py-3 text-light_front dark:text-calm">
-            <AiFillTwitterCircle className="hover:opacity-60 hover:text-mid2" />
-            <AiFillGithub className="hover:opacity-60 hover:text-mid2" />
-            <AiFillLinkedin className="hover:opacity-60 hover:text-mid2" />
+            <a href="https://twitter.com/pjparties">
+              <AiFillTwitterCircle className="cursor-pointer hover:opacity-60 hover:text-mid2" />
+            </a>
+            <a href="https://github.com/ParthJuneja">
+              <AiFillGithub className="cursor-pointer hover:opacity-60 hover:text-mid2" />
+            </a>
+            <a href="https://www.linkedin.com/in/parth-juneja-861370211/">
+              <AiFillLinkedin className="cursor-pointer hover:opacity-60 hover:text-mid2" />
+            </a>
           </div>
-          <div className="relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80  mt-20 mx-auto overflow-hidden dark:bg-gradient-to-b dark:from-pale dark:to-sand">
-            <Image src={deved} fill objectFit="cover" />
-          </div>
+
+          <Avatar />
         </section>
 
-        <section>
-          <div className="flex-col justify-center">
-            <h3 className="text-3xl py-1 text-light_front lg:text-4xl dark:text-fore">Services I offer</h3>
-            <p className=" text-md py-5 leading-8 lg:text-xl text-light_mid2 dark:text-mid2">
-              {" "}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              magnam atque sint, rerum aspernatur quod illo quo voluptas
-              voluptates nihil nemo officia earum. Unde totam sapiente
-              cupiditate aliquid molestiae inventore.{" "}
-            </p>
-          </div>
-        </section>
+        {/* <Services /> */}
 
-        <section>
-          <div className="flex-col justify-center">
-            <h3 className="text-3xl py-1 text-light_front lg:text-4xl dark:text-fore">Skills I have</h3>
-            <p className=" text-md py-5 leading-8 lg:text-xl text-light_mid2 dark:text-mid2">
-              {" "}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              magnam atque sint, rerum aspernatur quod illo quo voluptas
-              voluptates nihil nemo officia earum. Unde totam sapiente
-              cupiditate aliquid molestiae inventore.{" "}
-            </p>
-          </div>
+        <Skills />
 
-          <div className="lg:flex gap-10">
-            <div className=" bg-fore  text-center shadow-lg p-10 rounded-xl my-10 dark:bg-mid1">
-              <Image
-                src={design}
-                width={100}
-                height={100}
-                className="mx-auto"
-              />
-              <h3 className="text-lg text-light_front gray font-medium pt-8 pb-2 dark:text-fore">
-                Beautfiul Designs
-              </h3>
-              <p className="text-light_front dark:text-mid2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Maxime, vitae nisi, dolor quidem tenetur voluptatibus laborum
-                labore placeat harum architecto voluptas hic a possimus, nemo
-                earum accusantium quasi aspernatur totam.
-              </p>
-              <h4 className="py-4 text-slate-800 dark:text-pinkish">Design tools i use</h4>
-              <p className="text-mud dark:text-calm">Photoshop</p>
-              <p className="text-mud dark:text-calm">VS code</p>
-              <p className="text-mud dark:text-calm">ML</p>
-            </div>
+        <Projects />
 
-            <div className=" bg-fore  text-center shadow-lg p-10 rounded-xl my-10 dark:bg-mid1">
-              <Image
-                src={design}
-                width={100}
-                height={100}
-                className="mx-auto"
-              />
-              <h3 className="text-lg text-light_front gray font-medium pt-8 pb-2 dark:text-fore">
-                Beautfiul Designs
-              </h3>
-              <p className="text-light_front dark:text-mid2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Maxime, vitae nisi, dolor quidem tenetur voluptatibus laborum
-                labore placeat harum architecto voluptas hic a possimus, nemo
-                earum accusantium quasi aspernatur totam.
-              </p>
-              <h4 className="py-4 text-slate-800 dark:text-pinkish">Design tools i use</h4>
-              <p className="text-mud dark:text-calm">Photoshop</p>
-              <p className="text-mud dark:text-calm">VS code</p>
-              <p className="text-mud dark:text-calm">ML</p>
-            </div>
-
-            <div className=" bg-fore  text-center shadow-lg p-10 rounded-xl my-10 dark:bg-mid1">
-              <Image
-                src={design}
-                width={100}
-                height={100}
-                className="mx-auto"
-              />
-              <h3 className="text-lg text-light_front gray font-medium pt-8 pb-2 dark:text-fore">
-                Beautfiul Designs
-              </h3>
-              <p className="text-light_front dark:text-mid2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Maxime, vitae nisi, dolor quidem tenetur voluptatibus laborum
-                labore placeat harum architecto voluptas hic a possimus, nemo
-                earum accusantium quasi aspernatur totam.
-              </p>
-              <h4 className="py-4 text-slate-800 dark:text-pinkish">Design tools i use</h4>
-              <p className="text-mud dark:text-calm">Photoshop</p>
-              <p className="text-mud dark:text-calm">VS code</p>
-              <p className="text-mud dark:text-calm">ML</p>
-            </div>
-          </div>
-
-          {/* // this is the section for the projects */}
-          <div className="flex flex-col gap-10 py-10 lg:flex-row flex-wrap">
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web1}
-                className="rounded-lg object-cover "
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web2}
-                className="rounded-lg object-cover "
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web3}
-                className="rounded-lg object-cover "
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web4}
-                className="rounded-lg object-cover "
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web5}
-                className="rounded-lg object-cover "
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web6}
-                className="rounded-lg object-cover "
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-          </div>
-        </section>
+        <Contact />
       </main>
     </div>
   );
