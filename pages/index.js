@@ -63,7 +63,7 @@ export default function Home() {
               .
             </p>
           </div>
-          <div className="text-5xl justify-center flex gap-16 py-3 text-light_front dark:text-calm">
+          <div className="text-5xl justify-center flex gap-12 lg:gap-16 py-3 text-light_front dark:text-calm">
             <a href="https://twitter.com/pjparties">
               <AiFillTwitterCircle className="cursor-pointer hover:opacity-60 hover:text-mid2" />
             </a>
